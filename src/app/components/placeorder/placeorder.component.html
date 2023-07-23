@@ -1,0 +1,124 @@
+<div class="container-xxl bg-white p-0">
+  <div class="container-xxl position-relative p-0">
+
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+      <div class="container text-center my-5 pt-5 pb-4">
+          <h1 class="display-3 text-white mb-3 animated slideInDown">Place Order</h1>
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center text-uppercase">
+                  <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                  <li class="breadcrumb-item"><a routerLink="/about">About</a></li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">Place order</li>
+              </ol>
+          </nav>
+      </div>
+    </div>
+  </div>
+
+  <!--Product Carousel start-->
+
+  <div class="container-xxl py-5">
+    <div class="container">
+
+          <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let product of products">
+              <ng-template carouselSlide [id]="product.image">
+                <div class="card p-4">
+                  <img class="card-img-top" src={{product.image}} alt="{{product.name}}" >
+                  <div class="card-body">
+                    <h5 class="card-title">&#8358; {{product.price}}</h5>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+
+          </owl-carousel-o>
+
+
+    </div>
+  </div>
+
+  <!--product Carousel ends-->
+
+  <!--Products Start-->
+
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+
+          <div class="col-lg-9 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row">
+              <div *ngFor="let product of products" class="col-lg-4 col-sm-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div (mouseover)="showButton = true" (mouseleave)="showButton = false"  class="card p_card p-2 my-5">
+                  <img class="card-img-top card-carousel" src={{product.image}}  alt="{{product.name}}" >
+                  <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <h5 class="card-title">&#8358; {{product.price | number:'1.2-2'}}</h5>
+                  </div>
+                  <div  class="card-body card-icon align-self-end ">
+                    <a (click)="addToCart(product)" class="card-link "><i class="bi bi-basket2"></i></a>
+
+                  </div>
+
+
+                </div>
+            </div>
+
+            </div>
+          </div>
+
+          <div  class="col-lg-3 col-sm-2 col-md-2 wow fadeInUp" data-wow-delay="0.1s">
+
+              <button (click)="checkOut()" type="button" class="btn btn-primary">Check out</button>
+
+            <h3 class="h6 pt-4 font-weight-semibold">Product Preview</h3>
+            <hr>
+            <table *ngIf="products_cart.length >=1" class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of products_cart; let i = index">
+                  <th scope="row">{{i+1}}</th>
+                  <td><img [src]="product?.image" class="img-responsive img-rounded" style="max-width: 50px; max-height: 50px;"></td>
+                  <td>{{product?.name}}</td>
+                  <td> 1 <input
+                      [(ngModel)]="product.quantity"
+                      [ngModelOptions]="{standalone: true}"
+
+                     type="number" min="1" class="form-control w-20" name="">
+                  </td>
+                  <td>&#8358; {{product.price*product.quantity | number:'1.2-2'}}  </td>
+                  <td><a (click)="removeFromCart(product)"><i class="bi bi-trash" style="color: red;"></i></a></td>
+
+                </tr>
+
+              </tbody>
+              <br>
+              <tbody>
+                <tr>
+                  <th scope="row">Total:</th>
+                  <td>&#8358; {{total}}</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!--Products end-->
+
+
+</div>
+
+
+

@@ -1,0 +1,119 @@
+[
+  {
+    "_id": "1",
+    "name": "Jollof rice" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687089456/fgnqpacg6waei3sr2dm4.jpg",
+    "price": 1400,
+    "quantity": 23,
+    "meal": "lunch",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "2",
+    "name": "Semo + Egusi" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687095039/abxcqmyvws5hpgnts6eg.jpg",
+    "price": "800",
+    "quantity": 23,
+    "meal": "lunch",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "3",
+    "name": "White rice + Chicken" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687095731/gc4igibisb3ffeixri6y.jpg",
+    "price": 1800,
+    "quantity": 23,
+    "meal": "breakfast",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "4",
+    "name": "Grilled chicken" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097511/rwbvymzymiwtg1wttmq0.jpg",
+    "price": 2000,
+    "quantity": 23,
+    "meal": "dinner",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "5",
+    "name": "Moi-moi" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097513/o2nncujdtsgmih9tc0tf.jpg",
+    "price": 600,
+    "quantity": 23,
+    "meal": "breakfast",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "6",
+    "name": "Pounded yam + Vegetable" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097585/ymuxkdxttht1oox4ygge.jpg",
+    "price": 1800,
+    "quantity": 23,
+    "meal": "lunch",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "7",
+    "name": "Amala + Abula" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097619/aawqeqtgfeb2jluwxp31.jpg",
+    "price": 1200,
+    "quantity": 23,
+    "meal":"lunch",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "8",
+    "name": "Pepper soup" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097658/tu1xnvztnkalmwgin1ly.jpg",
+    "price": 700,
+    "quantity": 23,
+    "meal":"dinner",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "9",
+    "name": "Stew" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097737/ztjlmzzb0htulz8nyrd4.jpg",
+    "price": 1600,
+    "quantity": 23,
+    "meal":"breakfast",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "10",
+    "name": "Grilled meat" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097861/qymnze3wlgec4a4cfuli.jpg",
+    "price": 700,
+    "quantity": 23,
+    "meal":"dinner",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "11",
+    "name": "White soup" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097772/y4sjsmupwudu9mecoo8c.jpg",
+    "price": 700 ,
+    "quantity": 23,
+    "meal":"lunch",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "12",
+    "name": "Fish stew" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687097899/p2qoyjvyodmfuierstaf.jpg",
+    "price": 1100 ,
+    "quantity": 23,
+    "meal":"dinner",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  },
+  {
+    "_id": "13",
+    "name": "Massa + Yaji" ,
+    "image": "https://res.cloudinary.com/fiaztech/image/upload/v1687099580/oscjoi6jawdz7nv3emql.jpg",
+    "price": 600 ,
+    "quantity": 23,
+    "meal":"breakfast",
+    "description": "Whether you are in the mood for something spicy or something mild, our expert chefs are always on hand to deliver the perfect meal to fit your preference. We understand that life can be busy, which is why we have made it possible for our customers to order their favorite dishes online and have them delivered right to their doorstep."
+  }
+]

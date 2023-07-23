@@ -1,0 +1,70 @@
+.card-carousel {
+  width: 100%;
+  height: 15%;
+  object-fit: cover;
+}
+.card{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  padding: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  box-shadow: 5px 5px 10px #e1e1e1;
+  background: linear-gradient(to left, white 50%, #FEA116 50%);
+  background-size: 200%;
+  background-position: right;
+}
+
+.card:hover{
+  background-position: left;
+  transform: scale(1.1);
+}
+.card{
+  transition: background-position 0.5s transform;
+
+}
+
+.card-link{
+  color: black;
+}
+
+
+.card-icon:hover{
+
+    animation: heartbeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    /*animation-delay: 1s; */
+    --animate-repeat: 2;
+
+}
+
+.card-icon a:hover.card-link {
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #D8E2DC;
+  transition: all 0.5s ease;
+}
+
+.card-icon a:hover.bi-basket2 {
+  color: black;
+  text-shadow: 0 0 15px #D8E2DC;
+  transition: all 0.5s ease;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+
+@media (max-width: 650px) {
+  .card-img-top {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+
+}

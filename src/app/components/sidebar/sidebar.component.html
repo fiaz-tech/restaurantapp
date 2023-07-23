@@ -1,0 +1,44 @@
+<ul class="navbar-nav ms-auto navbar-nav-scroll">
+
+  <li class="nav-item">
+      <a routerLink="/" (click)="onSidenavClose()" class="nav-link active" aria-current="page" >Home</a>
+  </li>
+  <li class="nav-item">
+      <a (click)="onSidenavClose()" class="nav-link" routerLink="/about">About</a>
+  </li>
+  <li class="nav-item">
+      <a (click)="onSidenavClose()" class="nav-link" routerLink="/about" >Services</a>
+  </li>
+  <li class="nav-item">
+      <a (click)="onSidenavClose()" class="nav-link" routerLink="/about">Plans</a>
+  </li>
+  <li class="nav-item dropdown">
+      <a (click)="onSidenavClose()" class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" routerLink="/about">Drop</a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdown01">
+          <li><a (click)="onSidenavClose()" class="dropdown-item" routerLink="/about">Article Details</a></li>
+          <li><div class="dropdown-divider"></div></li>
+          <li><a (click)="onSidenavClose()" class="dropdown-item" routerLink="/about">Terms Conditions</a></li>
+          <li><div class="dropdown-divider"></div></li>
+
+      </ul>
+  </li>
+  <li class="nav-item">
+      <a (click)="onSidenavClose()" class="nav-link" routerLink="/about">Contact</a>
+  </li>
+</ul>
+<span class="nav-item social-icons">
+  <span class="fa-stack">
+      <a (click)="onSidenavClose()" routerLink="/about">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-facebook-f fa-stack-1x"></i>
+      </a>
+  </span>
+  <span class="fa-stack">
+      <a (click)="onSidenavClose()" routerLink="/home">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fab fa-twitter fa-stack-1x"></i>
+      </a>
+  </span>
+</span>
+
