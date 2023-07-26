@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment';
 export class FooterComponent implements OnInit {
 
   submitted: boolean = false;
+  isLoading: boolean = false;
 
   emailForm: FormGroup = new FormGroup({
     name: new FormControl(''),
@@ -44,13 +45,15 @@ export class FooterComponent implements OnInit {
     if (this.emailForm.invalid) {
       return;
     }
+    this.isLoading = true;
     this.contactService.addEmail(this.emailForm.value).subscribe({
       next: (res) => {
-        console.log(res);
         this.emailForm.reset()
+        this.isLoading = false;
         this.router.navigate(['/home']);
       },
       error: (error) => {
+        this.isLoading = false;
         alert('Error occurred while submiting your email');
       },
     });

@@ -12,13 +12,15 @@ import { environment } from 'src/environments/environment';
 })
 export class ContactComponent implements OnInit {
 
+  submitted = false;
+  isLoading: boolean = false;
+
   contactForm: FormGroup = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
     subject: new FormControl(''),
     message: new FormControl(''),
   });
-  submitted = false;
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group(
@@ -46,16 +48,18 @@ export class ContactComponent implements OnInit {
     if (this.contactForm.invalid) {
       return;
     }
-
-    //console.log(JSON.stringify(this.form.value, null, 2));
+    this.isLoading = true;
     this.contactService.addContact(this.contactForm.value).subscribe({
       next: (res) => {
         console.log(res);
+        this.isLoading = false;
         this.contactForm.reset()
         this.router.navigate(['/home']);
       },
       error: (error) => {
+        this.isLoading = false;
         alert('Error occurred while submiting your message');
+
       },
     });
   }
