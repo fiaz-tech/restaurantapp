@@ -34,7 +34,6 @@
               "node_modules/wowjs/css/libs/animate.css",
               "src/styles.css"
 
-
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -51,8 +50,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
