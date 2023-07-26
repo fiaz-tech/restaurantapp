@@ -29,10 +29,12 @@
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "node_modules/animate.css/animate.min.css",
-              "src/styles.css",
               "node_modules/animate.css/animate.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/wowjs/css/libs/animate.css"
+              "node_modules/wowjs/css/libs/animate.css",
+              "src/styles.css"
+
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -40,8 +42,6 @@
               "src/assets/lib/easing/easing.js",
               "src/assets/lib/easing/easing.min.js",
               "src/assets/lib/waypoints/waypoints.min.js",
-              "src/assets/lib/wow/wow.js",
-              "src/assets/lib/wow/wow.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
               "node_modules/wowjs/dist/wow.js"
             ]

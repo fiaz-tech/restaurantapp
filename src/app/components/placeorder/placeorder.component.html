@@ -69,7 +69,7 @@
 
           <div  class="col-lg-3 col-sm-2 col-md-2 wow fadeInUp" data-wow-delay="0.1s">
 
-              <button (click)="checkOut()" type="button" class="btn btn-primary">Check out</button>
+              <button *ngIf="products_cart.length > 0" (click)="checkOut()" type="button" class="btn btn-primary">Check out</button>
 
             <h3 class="h6 pt-4 font-weight-semibold">Product Preview</h3>
             <hr>
@@ -81,11 +81,12 @@
                   <th scope="col">Product</th>
                   <th scope="col">Quantity</th>
                   <th scope="col">Price</th>
+                  <th scope="col">Del</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let product of products_cart; let i = index">
-                  <th scope="row">{{i+1}}</th>
+                  <td scope="row">{{i+1}}</td>
                   <td><img [src]="product?.image" class="img-responsive img-rounded" style="max-width: 50px; max-height: 50px;"></td>
                   <td>{{product?.name}}</td>
                   <td> 1 <input

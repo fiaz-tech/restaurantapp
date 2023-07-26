@@ -1,12 +1,8 @@
-import { Component, OnInit, OnDestroy, Inject, HostListener } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
 
 import { DOCUMENT } from '@angular/common'
-import { HotObservable } from 'rxjs/internal/testing/HotObservable';
-import { Router, NavigationEnd } from '@angular/router';
 import { NgwWowService } from 'ngx-wow';
-import { Subscription }   from 'rxjs';
-import { filter } from 'rxjs/operators';
-import * as $ from 'jquery'
+
 
 
 
@@ -35,13 +31,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-
 ngOnInit() {
   window.scroll(0,0);
 }
-
-
-
-
 
 }
